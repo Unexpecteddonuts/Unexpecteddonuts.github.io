@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Typing</title>
+    
+    <link rel="stylesheet" href="dynamics.js">
+
+    
+</head>
+<body>
+    <div class="outer-box">
+        <center>
+            <div id="typing"></div>
+            <br>
+            <div>
+                <input type="text" id="answer">
+            </div>
+            <br>
+            <div>
+                <button type="button" onclick="Check()">Enter</button>
+            </div>
+        </center>
+    </div>
+    <div class="box"></div> </div>
+
+    <p id="countdown">10:00</p>
+    <script src="dynamics.js"></script>
+    <script>
+      function exitConfirm(){
+      var answer = window.confirm("do you want to exit");
+      if (answer){window.close();}
+      }
+    </script>
+    <div id="shadow"></div>
+
+    <button id="defeat" type="button" onclick="exitConfirm()">Admit Defeat!</button>
+    <script src="num.js"></script>
+</body>
+</html>
